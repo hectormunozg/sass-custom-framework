@@ -270,28 +270,44 @@ h4 {
 a {
   color: #656a6e;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0 0 1.6666666667em; }
 
-/* line 52, ../scss/_base.scss */
+/* line 51, ../scss/_base.scss */
+p {
+  font-size: 1.125em;
+  line-height: 1.5;
+  font-weight: 300; }
+
+/* line 57, ../scss/_base.scss */
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+  margin: 1.3333333333em 0;
+  padding: 0 0 0 5%;
+  border-left: solid 0.3333333333em #ebecec; }
+
+/* line 70, ../scss/_base.scss */
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 61, ../scss/_base.scss */
+/* line 80, ../scss/_base.scss */
 input,
 textarea {
   display: block;
   outline: 0;
   border: 0; }
 
-/* line 68, ../scss/_base.scss */
+/* line 87, ../scss/_base.scss */
 input:focus,
 textarea:focus {
   transition: 0.3s; }
 
-/* line 75, ../scss/_base.scss */
+/* line 95, ../scss/_base.scss */
 button {
   outline: 0; }
 
@@ -332,7 +348,7 @@ button {
   border-color: #52bab3; }
 
 /* line 49, ../scss/extends.scss */
-h1, .headline-primary {
+h1, .headline-primary--grouped, .headline-primary {
   font-weight: 300;
   font-size: 2.625em;
   line-height: 1.0952380952;
@@ -341,7 +357,7 @@ h1, .headline-primary {
   margin-top: 0; }
 
 /* line 59, ../scss/extends.scss */
-h2, .headline-secondary {
+h2, .headline-secondary--grouped, .headline-secondary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 1.5em;
@@ -412,6 +428,13 @@ h2, .headline-secondary {
 /* line 7, ../scss/headlines.scss */
 .headline-primary {
   margin-bottom: 1.6666666667em; }
-/* line 11, ../scss/headlines.scss */
+  /* line 74, ../scss/_utilities.scss */
+  .headline-primary--grouped {
+    margin-bottom: 0; }
+/* line 18, ../scss/headlines.scss */
 .headline-secondary {
   margin-bottom: 0.9166666667em; }
+  /* line 74, ../scss/_utilities.scss */
+  .headline-secondary--grouped {
+    margin-top: 0.4166666667em;
+    margin-bottom: 2.25em; }

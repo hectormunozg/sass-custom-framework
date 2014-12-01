@@ -45,9 +45,27 @@ a {
   color: palette(grey, dark); 
   text-decoration: none;
   font-weight: $font-weight--medium;
+  margin: 0 0 em(30px, 18px); 
+}
+
+p {
+  font-size: em(18px);
+  line-height: (27px / 18px);
+  font-weight: $font-weight--light;
+}
+
+blockquote {
+  font-size: em(24px);
+  font-style: italic;
+  font-weight: $font-weight--light;
+  margin: em(32px, 24px) 0;
+  padding: 0 0 0 5%;
+  border-left: solid em(8px, 24px) palette(grey, xx-light); 
 }
 
 // Lists
+//==========================================================================
+
 
 ul,
 li {
@@ -56,7 +74,8 @@ li {
   list-style-type: none;
 }
 
-// Form elements
+// Form elements 
+//==========================================================================
 
 input, 
 textarea {
@@ -71,6 +90,7 @@ textarea:focus {
 }
 
 // Button
+//==========================================================================
 
 button {
   outline: 0;
