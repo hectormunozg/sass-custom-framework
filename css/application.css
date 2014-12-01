@@ -252,26 +252,11 @@ header {
   text-align: center;
   padding: 3em 0; }
 
-/* line 21, ../scss/_base.scss */
-h1 {
-  font-weight: 300;
-  font-size: 2.625em;
-  line-height: 1.0952380952;
-  margin-bottom: 1.6666666667em;
-  color: #525559; }
-
-/* line 29, ../scss/_base.scss */
-h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 1.5em;
-  color: #999da1; }
-
-/* line 37, ../scss/_base.scss */
+/* line 30, ../scss/_base.scss */
 h3 {
   font-size: 1.125em; }
 
-/* line 41, ../scss/_base.scss */
+/* line 34, ../scss/_base.scss */
 h4 {
   margin-top: 1.5714285714em;
   margin-bottom: 2.2857142857em;
@@ -281,32 +266,32 @@ h4 {
   font-weight: 400;
   font-size: 0.875em; }
 
-/* line 51, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 a {
   color: #656a6e;
   text-decoration: none;
   font-weight: 400; }
 
-/* line 59, ../scss/_base.scss */
+/* line 52, ../scss/_base.scss */
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 68, ../scss/_base.scss */
+/* line 61, ../scss/_base.scss */
 input,
 textarea {
   display: block;
   outline: 0;
   border: 0; }
 
-/* line 75, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 input:focus,
 textarea:focus {
   transition: 0.3s; }
 
-/* line 82, ../scss/_base.scss */
+/* line 75, ../scss/_base.scss */
 button {
   outline: 0; }
 
@@ -345,6 +330,23 @@ button {
 .nav__item a:hover, .nav__item--current a {
   color: #0b0b0b;
   border-color: #52bab3; }
+
+/* line 49, ../scss/extends.scss */
+h1, .headline-primary {
+  font-weight: 300;
+  font-size: 2.625em;
+  line-height: 1.0952380952;
+  margin-bottom: 1.6666666667em;
+  color: #525559;
+  margin-top: 0; }
+
+/* line 59, ../scss/extends.scss */
+h2, .headline-secondary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #999da1;
+  letter-spacing: 1px; }
 
 /* line 8, ../scss/_main.scss */
 .container {
@@ -406,3 +408,10 @@ button {
   /* line 12, ../scss/nav.scss */
   .nav__item a {
     color: #797e83; }
+
+/* line 7, ../scss/headlines.scss */
+.headline-primary {
+  margin-bottom: 1.6666666667em; }
+/* line 11, ../scss/headlines.scss */
+.headline-secondary {
+  margin-bottom: 0.9166666667em; }
