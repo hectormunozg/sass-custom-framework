@@ -3,15 +3,19 @@
 // ========================================================================
 
 
+// Layout =================================================================
+
+.container {
+    max-width: em(1000px);
+    margin: 0 auto;
+    padding: 0 em(15px) em(50px) em(15px);
+}
+
+// icons ==================================================================
+
 .site-logo {
     margin-bottom: 2em;
     @include img-replace("logo.svg", 115px, 45px, inline-block);
-}
-
-.btn,
-.progbar,
-.tooltip {
-    @include bgcolors($ui-colors);
 }
 
 .icn-toggle {
@@ -24,5 +28,24 @@
     position: absolute;
     border-top: solid 3px palette(grey);
     border-bottom: solid 3px palette(grey);
-    
+    display: none;
 }
+
+
+// Buttons =================================================================
+
+.btn {
+    @include bg-colors($ui-colors);
+}
+
+[class^="btn--"] {
+  @extend %btn;
+  margin-bottom: em(20px, 14px); 
+  width: auto;
+  display: inline-block;
+  margin-right: em(15px, 14px);
+}
+
+
+
+

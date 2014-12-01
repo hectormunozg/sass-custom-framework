@@ -75,7 +75,17 @@ $ui-colors: (
 
 $base__font-size   : 16px;
 $base__line        : 24px;
+$letter-space      : 1px;
 
+
+// Border radius ==========================================================
+
+$br--default     : .4em;
+$br--round       : 50%;
+
+// Transitions ============================================================
+
+$trns-duration   : .3s;
 
 
 // Path to assets =========================================================

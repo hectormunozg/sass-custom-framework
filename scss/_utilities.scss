@@ -26,7 +26,7 @@
 
 // Mixins =================================================================
 
-@mixin bgcolors($map) {
+@mixin bg-colors($map) {
 
     @each $theme, $color in $map {
         &--#{$theme} {
@@ -60,6 +60,35 @@
         @error "#{$el} is not a valid pseudo-element, mate!";
     }
 }
+
+
+// BEM selectors ===========================================================
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
