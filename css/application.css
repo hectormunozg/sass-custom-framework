@@ -286,41 +286,56 @@ footer {
   padding-top: 5em;
   padding-bottom: 2.125em; }
 
-.grid__col--1 {
-  width: 6.5%; }
+@media (min-width: 769) {
+  .grid__col--1 {
+    width: 6.5%; }
 
-.grid__col--2 {
-  width: 15%; }
+  .grid__col--2 {
+    width: 15%; }
 
-.grid__col--3 {
-  width: 23.5%; }
+  .grid__col--3 {
+    width: 23.5%; }
 
-.grid__col--4 {
-  width: 32%; }
+  .grid__col--4 {
+    width: 32%; }
 
-.grid__col--5 {
-  width: 40.5%; }
+  .grid__col--5 {
+    width: 40.5%; }
 
-.grid__col--6 {
-  width: 49%; }
+  .grid__col--6 {
+    width: 49%; }
 
-.grid__col--7 {
-  width: 57.5%; }
+  .grid__col--7 {
+    width: 57.5%; }
 
-.grid__col--8 {
-  width: 66%; }
+  .grid__col--8 {
+    width: 66%; }
 
-.grid__col--9 {
-  width: 74.5%; }
+  .grid__col--9 {
+    width: 74.5%; }
 
-.grid__col--10 {
-  width: 83%; }
+  .grid__col--10 {
+    width: 83%; }
 
-.grid__col--11 {
-  width: 91.5%; }
+  .grid__col--11 {
+    width: 91.5%; }
 
-.grid__col--12 {
-  width: 100%; }
+  .grid__col--12 {
+    width: 100%; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="grid__col--"] {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em; } }
+@media (min-width: 769px) {
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    [class^="grid__col--"] + [class^="grid__col--"] {
+      margin-left: 2%; }
+    [class^="grid__col--"]:last-of-type {
+      float: right; } }
 
 .nav__item, .nav__item--current {
   display: inline-block;
