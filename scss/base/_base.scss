@@ -15,8 +15,6 @@ body {
 }
 
 // Text
-// ==========================================================================
-
 
 h1 {
 	@extend %hdln-prim;
@@ -54,29 +52,18 @@ p {
 }
 
 blockquote {
-  font-size: em(24px);  
-  font-style : italic;
-  font-weight: $font-weight--light;
-  margin: em(32px, 24px) 0;
-  padding: 0 0 0 5%;
-  border-left: solid em(8px, 24px) palette(grey, xx-light);
+	@media (min-width: 769px) {
+		margin: em(32px, 24px) 0;
+		padding: 0 0 0 5%;
+		border-left: em(8px, 24px) solid palette(grey, xx-light); 
+		font-size: em(24px);
+	}
+	font-weight: $font-weight--light;
+	font-style : italic;
+	font-size : em(20px);
 }
-
-// Images
-// ==========================================================================
-
-img {
-    margin-bottom: em(24px);
-    max-width: 100%;
-    height: auto;
-}
-
-
-
 
 // Lists
-// ==========================================================================
-
 
 ul,
 li {
@@ -85,9 +72,15 @@ li {
   list-style-type: none;
 }
 
-// Form elements
-// ==========================================================================
+// Images
 
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
+}
+
+// Form elements
 
 input, 
 textarea {
@@ -104,16 +97,12 @@ textarea:focus {
 }
 
 // Button
-// ==========================================================================
-
 
 button {
 	outline: 0;
 }
 
 // Layout
-// ==========================================================================
-
 
 footer {
 	border-top: 1px solid palette(grey, xx-light);

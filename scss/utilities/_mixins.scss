@@ -53,3 +53,12 @@
 	height: $h;
 	display: $disp;
 }
+      
+// Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+	& + & {
+	  margin-left: $margin;
+    @content;
+	}
+}

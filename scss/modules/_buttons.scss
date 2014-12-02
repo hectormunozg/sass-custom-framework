@@ -10,7 +10,12 @@
   @extend %center-align;
   @extend %btn;
   margin-bottom: em(20px, 14px); 
-  width: auto;
-  display: inline-block;
-  margin-right: em(15px, 14px);
+  @media (min-width: 1px) and (max-width: 768px) {
+  	width: 100%;
+  }
+  @media (min-width: 769px) { 
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+  }
 }

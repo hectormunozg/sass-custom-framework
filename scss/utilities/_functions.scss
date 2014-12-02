@@ -19,3 +19,6 @@
 @function palette($palette, $shade: 'base') {
 	@return map-get(map-get($color-palettes, $palette), $shade);
 }
+    
+// Set the "context" width for the grid
+    
