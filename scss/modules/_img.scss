@@ -10,8 +10,13 @@
   @include m(avatar) {
     display: block;
     border-radius: $br--round;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: em(24px);
   }
   @include m(hero) {
-    margin-bottom: em(42px);
+    @media (min-width: 769px) {
+      margin-bottom: em(42px);
+    }
   }
 }

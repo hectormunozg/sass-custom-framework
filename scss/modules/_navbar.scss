@@ -4,6 +4,8 @@
 
 .navbar {	
 	position: relative;
-  margin-top: em(54px);
-	margin-bottom: 0;
+	@include mq(medium) {
+		margin-top: em(54px);
+		margin-bottom: 0;
+	}
 }
